@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Block_Craft';
+    src: url('./fonts/BlockCraft.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robotika_Pixel_Greek';
+    src: url('./fonts/RobotikaPixelGreek-nAWJR.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Coretta';
+    src: url('./fonts/Coretta-BF69fc4c740b359.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

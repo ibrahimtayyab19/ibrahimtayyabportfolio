@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./output.css --minify",
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahimtayyab19/ibrahimtayyabportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ibrahimtayyab19/ibrahimtayyabportfolio/issues"
+  },
+  "homepage": "https://github.com/ibrahimtayyab19/ibrahimtayyabportfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19"
+  } 
+}

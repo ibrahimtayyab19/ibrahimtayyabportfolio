@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link href="./output.css" rel="stylesheet" />
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+            }
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+            .animate-marquee {
+                animation: scroll 20s linear infinite both;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="w-full px-4 py-3 bg-[#007e8d] font-block-craft">
+            <nav
+                class="h-10 w-full flex justify-between items-center px-8 border-dashed border border-black"
+            >
+                <div class="links flex gap-4 p-2">
+                    <a class="text-lg font-bold" href="#">Home</a>
+                    <a
+                        class="text-lg font-bold hover:animate-pulse opacity-50 hover:opacity-100"
+                        href="#about"
+                        >About</a
+                    >
+                    <a
+                        class="text-lg font-bold hover:animate-pulse opacity-50 hover:opacity-100"
+                        href="#"
+                        >Contact</a
+                    >
+                    <a
+                        class="text-lg font-bold hover:animate-pulse opacity-50 hover:opacity-100"
+                        href="#projects"
+                        >Projects</a
+                    >
+                </div>
+                <a
+                    class="inline-block border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                    >Download Resume</a
+                >
+            </nav>
+
+            <section
+                class="flex mt-3 pb-2 border border-black justify-between px-8 h-40"
+            >
+                <div class="flex flex-col justify-end">
+                    <h4 class="text-1xl text-xl">Hello I am,</h4>
+                    <div
+                        class="bg-black text-[#007e8d] hover:bg-[#007e8d] hover:border-black hover:text-black hover:cursor-none px-2 border-[0.2rem] border-dotted border-[#007e8d]"
+                    >
+                        <h1 class="text-7xl font-bold -m-1">Ibrahim.</h1>
+                    </div>
+                </div>
+                <div class="flex items-end font-medium text-lg">
+                    <p>[4:11PM]</p>
+                    <p>--------</p>
+                    <p>Front-End Developer</p>
+                </div>
+            </section>
+
+            <section
+                class="border border-black mt-3 p-3 h-[40rem] contain-content"
+            >
+                <img
+                    class="h-full w-full object-cover object-[0%_30%]"
+                    src="./assets/hero.png"
+                    alt=""
+                />
+            </section>
+
+            <section id="about">
+                <div
+                    class="hero-about border border-black w-full mt-3 py-20 px-20 flex flex-col items-center justify-center"
+                >
+                    <div class="relative text-center w-2/3">
+                        <h1 class="text-4xl">{Crafting_Pixels_&_Code}</h1>
+                        <p class="font-robotika text-1xl px-12 py-2">
+                            I am a passionate learner who loves solving problems
+                            and building things. Right now, I am focusing on
+                            Front-End Dev, but my journey doesn't stop here. My
+                            ultimate goal is to become an AI-focused Full-Stack
+                            Engineer because I want to build smart, real-world
+                            applications that solve actual human problems. I am
+                            always ready to learn new technologies and grow.
+                        </p>
+                        <img
+                            class="h-14 w-14 absolute right-5 -top-6 rotate-12 hover:scale-110"
+                            src="./assets/html.png"
+                            alt=""
+                        />
+                        <img
+                            class="h-14 w-14 absolute -bottom-19 left-5 -rotate-12 hover:scale-110"
+                            src="./assets/css.png"
+                            alt=""
+                        />
+                        <img
+                            class="h-12 w-12 absolute -top-5 left-4 rotate-12 hover:scale-110"
+                            src="./assets/js.png"
+                            alt=""
+                        />
+                        <img
+                            class="h-14 w-14 absolute right-9 -bottom-19 -rotate-6 hover:scale-110"
+                            src="./assets/vscode.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+
+                <div
+                    class="marquee overflow-hidden border-y border-black mt-2 mb-2 w-full flex bg-[url('./assets/dotted.jpg')] bg-[#007e8d] bg-contain bg-center bg-blend-multiply"
+                >
+                    <div
+                        class="w-full flex text-black font-robotika text-2xl tracking-normal font-bold z-10 py-3 whitespace-nowrap"
+                    >
+                        <div
+                            class="animate-marquee flex p-2 items-center justify-around w-full shrink-0"
+                        >
+                            <!-- List 1 -->
+                            <p>HTML5</p>
+                            <p>-</p>
+                            <p>CSS3</p>
+                            <p>-</p>
+                            <p>SCSS</p>
+                            <p>-</p>
+                            <p>Tailwind CSS</p>
+                            <p>-</p>
+                            <p>JavaScript</p>
+                            <p>-</p>
+                            <p>React</p>
+                            <p>-</p>
+                            <p>C++</p>
+                            <p>-</p>
+                            <p>Python</p>
+                            <p>-</p>
+                            <p>Git & GitHub</p>
+                            <p>-</p>
+                        </div>
+                        <div
+                            class="animate-marquee flex p-2 items-center justify-around w-full shrink-0"
+                        >
+                            <!-- List 2 (Duplicate for seamless continuous scrolling) -->
+                            <p>HTML5</p>
+                            <p>-</p>
+                            <p>CSS3</p>
+                            <p>-</p>
+                            <p>SCSS</p>
+                            <p>-</p>
+                            <p>Tailwind CSS</p>
+                            <p>-</p>
+                            <p>JavaScript</p>
+                            <p>-</p>
+                            <p>React</p>
+                            <p>-</p>
+                            <p>C++</p>
+                            <p>-</p>
+                            <p>Python</p>
+                            <p>-</p>
+                            <p>Git & GitHub</p>
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="main-bio border p-4 border-black w-full flex items-center justify-center"
+                >
+                    <div
+                        class="bio flex flex-col justify-center gap-3 w-3/5 h-64 text-[#007e8d] p-6 border-x-2 border-[#007e8d] border-dashed bg-black"
+                    >
+                        <h2 class="font-block-craft text-4xl">_whoami</h2>
+                        <p
+                            class="font-robotika text-base md:text-lg leading-relaxed"
+                        >
+                            I am a Computer Science undergraduate currently in
+                            my 6th semester at the University of Punjab. My
+                            technical foundation is built entirely on academic
+                            learning and self-taught projects.
+                        </p>
+                        <p
+                            class="font-robotika text-base md:text-lg leading-relaxed"
+                        >
+                            On a daily basis, my routine involves writing
+                            front-end code, building user interfaces, and
+                            actively exploring the world of local LLMs and AI
+                            agents. I love experimenting with new tools and
+                            expanding my technical boundaries every single day.
+                        </p>
+                    </div>
+
+                    <div
+                        class="skills-terminal w-2/5 h-64 flex flex-col font-robotika border-2 border-black"
+                    >
+                        <!-- Linux Top Bar -->
+                        <div
+                            class="flex justify-between items-center border-b border-black px-3 py-1"
+                        >
+                            <div
+                                class="text-black text-sm font-extrabold tracking-widest"
+                            >
+                                SKILLS TERMINAL:
+                            </div>
+                            <div
+                                class="flex gap-2 text-black font-bold text-sm"
+                            >
+                                <div
+                                    class="px-1.5 cursor-pointer hover:bg-white hover:text-black"
+                                >
+                                    -
+                                </div>
+                                <div
+                                    class="px-1.5 cursor-pointer hover:bg-red-500 hover:text-white"
+                                >
+                                    X
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terminal Content -->
+                        <div
+                            class="p-4 flex flex-col gap-3 text-4xl md:text-sm overflow-hidden"
+                        >
+                            <!-- Linux Command -->
+                            <div>
+                                <span class="text-black font-bold"
+                                    >ibrahim@Portfolio : ~$</span
+                                >
+                                <span class="text-black opacity-70"
+                                    >ls -a ./skills</span
+                                >
+                            </div>
+
+                            <!-- Skills Data (Formatted as Linux Paths) -->
+                            <div
+                                class="flex flex-col gap-2 pl-2 border-l-2 border-black border-dashed my-1"
+                            >
+                                <p>
+                                    <span class="text-black font-bold"
+                                        >./langs/</span
+                                    >
+                                    <span class="text-black opacity-70 ml-0"
+                                        >C++, Python, JS</span
+                                    >
+                                </p>
+                                <p>
+                                    <span class="text-black font-bold"
+                                        >./web/</span
+                                    >
+                                    <span class="text-black opacity-70 ml-1"
+                                        >HTML, CSS, SCSS, Tailwind, React</span
+                                    >
+                                </p>
+                                <p>
+                                    <span class="text-black font-bold"
+                                        >./tools/</span
+                                    >
+                                    <span class="text-black opacity-70 ml-1"
+                                        >Git, GitHub, Vercel, Linux</span
+                                    >
+                                </p>
+                                <p>
+                                    <span class="text-black font-bold"
+                                        >./ide/</span
+                                    >
+                                    <span class="text-black opacity-70 ml-3"
+                                        >VS Code, Antigravity</span
+                                    >
+                                </p>
+                                <p>
+                                    <span class="text-black font-bold"
+                                        >./ai/</span
+                                    >
+                                    <span class="text-black opacity-70 ml-5"
+                                        >Local LLMs, n8n, Gemini CLI</span
+                                    >
+                                </p>
+                            </div>
+
+                            <!-- Linux Blinking Cursor -->
+                            <div>
+                                <span class="text-black font-bold"
+                                    >ibrahim@Portfolio:~$</span
+                                >
+                                <span
+                                    class="bg-black w-2.5 h-4 inline-block align-middle ml-1 animate-pulse"
+                                ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="projects"
+                class="project-showcase w-full border border-black mt-3 p-6"
+            >
+                <div
+                    class="main-heading flex justify-center items-center tracking-tighter sticky top-0 z-10 w-full p-4 bg-[#007e8d]"
+                >
+                    <h1 class="text-[2.5rem]">{Compiled</h1>
+                    <p class="text-3xl">_</p>
+                    <h1 class="text-[2.5rem] opacity-50 hover:opacity-100">
+                        Projects}
+                    </h1>
+                </div>
+                <div
+                    class="img-content-container w-full py-16 mx-auto px-32 my-4 flex items-start justify-between gap-24"
+                >
+                    <div class="first-column w-1/3 flex flex-col gap-10">
+                        <p
+                            class="text-center font-robotika text-lg border border-black border-dashed p-2 hover:bg-black hover:border-[#007e8d] hover:text-[#007e8d] hover:cursor-default"
+                        >
+                            [ sys.core/C++ ]
+                        </p>
+                        <div
+                            class="bg-black bg-opacity-10 w-full h-60 border border-dashed border-black"
+                        >
+                            <div
+                                class="h-full w-full scale-90 flex flex-col items-center justify-center p-2"
+                            >
+                                <h1
+                                    class="text-[black] text-6xl font-coretta font-medium"
+                                >
+                                    C++<br />
+                                    Project
+                                </h1>
+                                <p
+                                    class="text-[#black] text-lg font-robotika underline mt-4"
+                                >
+                                    Terminal-Based
+                                </p>
+                                <a
+                                    href="https://github.com/ibrahimtayyab19/tally-counter/"
+                                    target="_blank"
+                                    class="inline-block mt-4 border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                                    >Click to View</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="bg-black bg-opacity-10 w-full h-80 border border-dashed border-black"
+                        >
+                            <div
+                                class="h-full w-full scale-100 flex flex-col items-center justify-center p-2"
+                            >
+                                <h1
+                                    class="text-[black] text-6xl font-coretta font-medium"
+                                >
+                                    C++<br />
+                                    Project
+                                </h1>
+                                <p
+                                    class="text-[#black] text-lg font-robotika underline mt-4"
+                                >
+                                    Terminal-Based
+                                </p>
+                                <a
+                                    href="https://github.com/ibrahimtayyab19/Gpa-Cgpa-Calculator"
+                                    target="_blank"
+                                    class="inline-block mt-4 border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                                    >Click to View</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="bg-black bg-opacity-10 w-full h-120 border border-dashed border-black"
+                        >
+                            <div
+                                class="h-full w-full scale-100 flex flex-col items-center justify-center p-2"
+                            >
+                                <h1
+                                    class="text-[black] text-6xl font-coretta font-medium"
+                                >
+                                    C++<br />
+                                    Project
+                                </h1>
+                                <p
+                                    class="text-[#black] text-lg font-robotika underline mt-4"
+                                >
+                                    Terminal-Based
+                                </p>
+                                <a
+                                    href="https://github.com/ibrahimtayyab19/Console-Based-Car-Game"
+                                    target="_blank"
+                                    class="inline-block mt-4 border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                                    >Click to View</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-column w-1/3 flex flex-col gap-10">
+                        <p
+                            class="text-center font-robotika text-lg border border-black border-dashed p-2 hover:bg-black hover:border-[#007e8d] hover:text-[#007e8d] hover:cursor-default"
+                        >
+                            [ web.render / UI ]
+                        </p>
+                        <div
+                            class="bg-black bg-opacity-10 w-full h-120 border border-dashed border-black"
+                        >
+                            <div
+                                class="h-full w-full scale-100 flex flex-col items-center justify-center p-2"
+                            >
+                                <h1
+                                    class="text-[black] text-5xl font-coretta font-bold"
+                                >
+                                    FRONT<br />
+                                    END DEV
+                                </h1>
+                                <p
+                                    class="text-[#black] text-lg font-robotika underline mt-4"
+                                >
+                                    WEBSITE
+                                </p>
+                                <a
+                                    href="https://arik-clone-omega.vercel.app/"
+                                    target="_blank"
+                                    class="inline-block mt-4 border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                                    >Click to View</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="bg-black bg-opacity-10 w-full h-60 border border-dashed border-black p-4"
+                        >
+                            <div
+                                class="h-full w-full scale-90 flex flex-col items-center justify-center"
+                            >
+                                <h1
+                                    class="text-[black] text-5xl font-coretta font-bold"
+                                >
+                                    FRONT<br />
+                                    END DEV
+                                </h1>
+                                <p
+                                    class="text-[#black] text-lg font-robotika underline mt-4"
+                                >
+                                    WEBSITE
+                                </p>
+                                <a
+                                    href="https://apple-clone-rox.vercel.app/"
+                                    target="_blank"
+                                    class="inline-block mt-4 border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                                    >Click to View</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="bg-black bg-opacity-10 w-full h-80 border border-dashed border-black"
+                        >
+                            <div
+                                class="h-full w-full scale-100 flex flex-col items-center justify-center p-2"
+                            >
+                                <h1
+                                    class="text-[black] text-5xl font-coretta font-bold"
+                                >
+                                    FRONT<br />
+                                    END DEV
+                                </h1>
+                                <p
+                                    class="text-[#black] text-lg font-robotika underline mt-4"
+                                >
+                                    WEBSITE
+                                </p>
+                                <a
+                                    href="https://arik-clone-omega.vercel.app/"
+                                    target="_blank"
+                                    class="inline-block mt-4 border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                                    >Click to View</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third-column w-1/3 flex flex-col gap-10">
+                        <p
+                            class="text-center font-robotika text-lg border border-black border-dashed p-2 hover:bg-black hover:border-[#007e8d] hover:text-[#007e8d] hover:cursor-default"
+                        >
+                            [ vibe.code / AI_Flow ]
+                        </p>
+                        <div
+                            class="bg-black bg-opacity-10 w-full h-80 border border-dashed border-black"
+                        >
+                            <div
+                                class="h-full w-full scale-100 flex flex-col items-center justify-center p-2"
+                            >
+                                <h1
+                                    class="text-[black] text-6xl font-coretta font-bold"
+                                >
+                                    VIBE<br />
+                                    CODE
+                                </h1>
+                                <p
+                                    class="text-[#black] text-lg font-robotika underline mt-4"
+                                >
+                                    WEBSITE
+                                </p>
+                                <a
+                                    href="https://boblos.vercel.app/"
+                                    target="_blank"
+                                    class="inline-block mt-4 border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                                    >Click to View</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="bg-black bg-opacity-10 w-full h-120 border border-dashed border-black"
+                        >
+                            <div
+                                class="h-full w-full scale-100 flex flex-col items-center justify-center p-2"
+                            >
+                                <h1
+                                    class="text-[black] text-6xl font-coretta font-bold"
+                                >
+                                    VIBE<br />
+                                    CODE
+                                </h1>
+                                <p
+                                    class="text-[#black] text-lg font-robotika underline mt-4"
+                                >
+                                    WEBSITE
+                                </p>
+                                <a
+                                    href="https://blanco-bakeshop.vercel.app/"
+                                    target="_blank"
+                                    class="inline-block mt-4 border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                                    >Click to View</a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="bg-black bg-opacity-10 w-full h-60 border border-dashed border-black"
+                        >
+                            <div
+                                class="h-full w-full scale-90 flex flex-col items-center justify-center p-2"
+                            >
+                                <h1
+                                    class="text-[black] text-6xl font-coretta font-bold"
+                                >
+                                    VIBE<br />
+                                    CODE
+                                </h1>
+                                <p
+                                    class="text-[#black] text-lg font-robotika underline mt-4"
+                                >
+                                    WEBSITE
+                                </p>
+                                <a
+                                    href="https://super-nirala.vercel.app/"
+                                    target="_blank"
+                                    class="inline-block mt-4 border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                                    >Click to View</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
