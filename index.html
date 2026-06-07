@@ -26,74 +26,84 @@
                 }
             }
             .animate-marquee {
-                animation: scroll 20s linear infinite both;
+                animation: scroll 15s linear infinite both;
             }
         </style>
     </head>
     <body>
-        <main class="w-full px-4 py-3 bg-[#007e8d] font-block-craft">
+        <main
+            class="w-full px-1.5 py-4 md:px-4 md:py-3 bg-[#007e8d] font-block-craft"
+        >
             <nav
-                class="h-10 w-full flex justify-between items-center px-8 border-dashed border border-black"
+                class="md:h-10 w-full flex justify-between items-center p-2 md:px-8 border-dashed border border-black"
             >
-                <div class="links flex gap-4 p-2">
-                    <a class="text-lg font-bold" href="#">Home</a>
+                <div class="links flex gap-2 md:gap-4 md:p-2">
+                    <a class="text-sm md:text-base font-bold" href="#">Home</a>
                     <a
-                        class="text-lg font-bold hover:animate-pulse opacity-50 hover:opacity-100"
+                        class="text-sm md:text-base font-bold hover:animate-pulse opacity-50 hover:opacity-100"
                         href="#about"
                         >About</a
                     >
                     <a
-                        class="text-lg font-bold hover:animate-pulse opacity-50 hover:opacity-100"
+                        class="hidden text-sm md:text-base font-bold hover:animate-pulse opacity-50 hover:opacity-100"
                         href="#"
                         >Contact</a
                     >
                     <a
-                        class="text-lg font-bold hover:animate-pulse opacity-50 hover:opacity-100"
+                        class="text-sm md:text-base font-bold hover:animate-pulse opacity-50 hover:opacity-100"
                         href="#projects"
                         >Projects</a
                     >
                 </div>
                 <a
-                    class="inline-block border border-black bg-[#007e8d] text-black px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
+                    class="inline-block border border-black bg-[#007e8d] text-black text-sm md:text-base px-0.5 md:px-1 py-[0.1rem] border-r-4 border-b-2 hover:translate-x-[0.1rem] hover:translate-y-[0.1rem]"
                     >Download Resume</a
                 >
             </nav>
-
             <section
-                class="flex mt-3 pb-2 border border-black justify-between px-8 h-40"
+                class="flex flex-col md:flex-row md:mt-3 mt-4 md:pb-2 py-3 border border-black items-start justify-between md:justify-between md:items-end md:px-8 px-2 h-48 md:h-40"
             >
-                <div class="flex flex-col justify-end">
-                    <h4 class="text-1xl text-xl">Hello I am,</h4>
+                <div class="flex md:p-3 flex-col md:justify-end">
+                    <h4 class="text-base md:text-xl">Hello I am,</h4>
                     <div
                         class="bg-black text-[#007e8d] hover:bg-[#007e8d] hover:border-black hover:text-black hover:cursor-none px-2 border-[0.2rem] border-dotted border-[#007e8d]"
                     >
-                        <h1 class="text-7xl font-bold -m-1">Ibrahim.</h1>
+                        <p class="md:text-7xl text-6xl font-bold -m-1">
+                            Ibrahim.
+                        </p>
                     </div>
                 </div>
-                <div class="flex items-end font-medium text-lg">
-                    <p>[4:11PM]</p>
+                <div
+                    class="flex gap-1 items-end font-medium text-base md:text-lg"
+                >
+                    <p>[4:11:00 PM]</p>
                     <p>--------</p>
                     <p>Front-End Developer</p>
                 </div>
             </section>
 
             <section
-                class="border border-black mt-3 p-3 h-[40rem] contain-content"
+                class="border border-black md:mt-3 mt-4 p-2 md:p-3 md:h-[40rem] h-80  contain-content"
             >
                 <img
-                    class="h-full w-full object-cover object-[0%_30%]"
+                    class="h-full w-full object-cover md:object-[0%_30%] object-[50%_0%]"
                     src="./assets/hero.png"
                     alt=""
                 />
+                <div id="about"></div>
             </section>
 
-            <section id="about">
+            <section>
                 <div
-                    class="hero-about border border-black w-full mt-3 py-20 px-20 flex flex-col items-center justify-center"
+                    class="hero-about border border-black w-full mt-4 md:mt-3 md:py-10 md:px-20 py-6 flex flex-col items-center justify-center"
                 >
-                    <div class="relative text-center w-2/3">
-                        <h1 class="text-4xl">{Crafting_Pixels_&_Code}</h1>
-                        <p class="font-robotika text-1xl px-12 py-2">
+                    <div class="relative text-center md:w-2/3">
+                        <h1 class="text-2xl md:text-4xl">
+                            {Crafting_Pixels_&_Code}
+                        </h1>
+                        <p
+                            class="font-robotika text-sm md:text-1xl px-6 md:px-12 py-6 md:py-10 leading-6"
+                        >
                             I am a passionate learner who loves solving problems
                             and building things. Right now, I am focusing on
                             Front-End Dev, but my journey doesn't stop here. My
@@ -103,22 +113,22 @@
                             always ready to learn new technologies and grow.
                         </p>
                         <img
-                            class="h-14 w-14 absolute right-5 -top-6 rotate-12 hover:scale-110"
+                            class="md:h-14 md:w-14 h-8 w-8 absolute md:right-2 md:top-2 right-2 top-6 rotate-12 hover:scale-110"
                             src="./assets/html.png"
                             alt=""
                         />
                         <img
-                            class="h-14 w-14 absolute -bottom-19 left-5 -rotate-12 hover:scale-110"
-                            src="./assets/css.png"
-                            alt=""
-                        />
-                        <img
-                            class="h-12 w-12 absolute -top-5 left-4 rotate-12 hover:scale-110"
+                            class="md:h-12 md:w-12 h-6 w-6 absolute md:top-2 md:left-2 top-6 left-2 -rotate-12 hover:scale-110"
                             src="./assets/js.png"
                             alt=""
                         />
                         <img
-                            class="h-14 w-14 absolute right-9 -bottom-19 -rotate-6 hover:scale-110"
+                            class="md:h-14 md:w-14 h-8 w-8 absolute md:-bottom-6 md:left-2 -bottom-2 left-14 -rotate-12 hover:scale-110"
+                            src="./assets/css.png"
+                            alt=""
+                        />
+                        <img
+                            class="md:h-14 md:w-14 h-8 w-8 absolute md:right-2 md:-bottom-6 right-14 -bottom-2 rotate-12 hover:scale-110"
                             src="./assets/vscode.png"
                             alt=""
                         />
@@ -129,12 +139,12 @@
                     class="marquee overflow-hidden border-y border-black mt-2 mb-2 w-full flex bg-[url('./assets/dotted.jpg')] bg-[#007e8d] bg-contain bg-center bg-blend-multiply"
                 >
                     <div
-                        class="w-full flex text-black font-robotika text-2xl tracking-normal font-bold z-10 py-3 whitespace-nowrap"
+                        class="w-full flex text-black font-robotika text-[0.6rem] md:text-2xl tracking-normal font-bold z-10 py-2 md:py-3 whitespace-nowrap"
                     >
                         <div
-                            class="animate-marquee flex p-2 items-center justify-around w-full shrink-0"
+                            class="animate-marquee flex p-0.5 md:p-2 items-center justify-around w-full shrink-0"
                         >
-                            <!-- List 1 -->
+                            
                             <p>HTML5</p>
                             <p>-</p>
                             <p>CSS3</p>
@@ -155,9 +165,9 @@
                             <p>-</p>
                         </div>
                         <div
-                            class="animate-marquee flex p-2 items-center justify-around w-full shrink-0"
+                            class="animate-marquee flex p-0.5 md:p-2 items-center justify-around w-full shrink-0"
                         >
-                            <!-- List 2 (Duplicate for seamless continuous scrolling) -->
+                            
                             <p>HTML5</p>
                             <p>-</p>
                             <p>CSS3</p>
@@ -181,14 +191,14 @@
                 </div>
 
                 <div
-                    class="main-bio border p-4 border-black w-full flex items-center justify-center"
+                    class="main-bio border p-2 md:p-4 border-black w-full flex flex-col md:flex-row items-center justify-center"
                 >
                     <div
-                        class="bio flex flex-col justify-center gap-3 w-3/5 h-64 text-[#007e8d] p-6 border-x-2 border-[#007e8d] border-dashed bg-black"
+                        class="bio flex flex-col justify-center gap-3 md:w-3/5 md:h-64 text-[#007e8d] p-8 border-b-2 md:border-b-0 md:border-r-2  border-[#007e8d] border-dashed bg-black"
                     >
-                        <h2 class="font-block-craft text-4xl">_who am I:</h2>
+                        <h2 class="font-block-craft text-2xl md:text-4xl">_who am I:</h2>
                         <p
-                            class="font-robotika text-base md:text-lg leading-relaxed"
+                            class="font-robotika text-sm md:text-lg leading-relaxed"
                         >
                             I am a Computer Science undergraduate currently in
                             my 6th semester at the University of Punjab. My
@@ -196,7 +206,7 @@
                             learning and self-taught projects.
                         </p>
                         <p
-                            class="font-robotika text-base md:text-lg leading-relaxed"
+                            class="font-robotika text-sm md:text-lg leading-relaxed"
                         >
                             On a daily basis, my routine involves writing
                             front-end code, building user interfaces, and
@@ -207,14 +217,14 @@
                     </div>
 
                     <div
-                        class="skills-terminal w-2/5 h-64 flex flex-col font-robotika border-2 border-black"
+                        class="skills-terminal md:w-2/5 md:h-64 w-full flex flex-col font-robotika border-2 border-black"
                     >
-                        <!-- Linux Top Bar -->
+                    
                         <div
                             class="flex justify-between items-center border-b border-black px-3 py-1"
                         >
                             <div
-                                class="text-black text-sm font-extrabold tracking-widest"
+                                class="text-black text-xs md:text-sm font-extrabold tracking-widest"
                             >
                                 SKILLS TERMINAL:
                             </div>
@@ -222,23 +232,23 @@
                                 class="flex gap-2 text-black font-bold text-sm"
                             >
                                 <div
-                                    class="px-1.5 cursor-pointer hover:bg-white hover:text-black"
+                                    class="px-1.5 cursor-pointer hover:bg-black hover:text-[#007e8d]"
                                 >
                                     -
                                 </div>
                                 <div
-                                    class="px-1.5 cursor-pointer hover:bg-red-500 hover:text-white"
+                                    class="px-1.5 cursor-pointer hover:bg-black hover:text-[#007e8d]"
                                 >
                                     X
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Terminal Content -->
+                       
                         <div
-                            class="p-4 flex flex-col gap-3 text-4xl md:text-sm overflow-hidden"
+                            class="p-4 flex flex-col gap-3 text-sm md:text-sm overflow-hidden"
                         >
-                            <!-- Linux Command -->
+                            
                             <div>
                                 <span class="text-black font-bold"
                                     >ibrahim@Portfolio : ~$</span
@@ -248,7 +258,7 @@
                                 >
                             </div>
 
-                            <!-- Skills Data (Formatted as Linux Paths) -->
+                        
                             <div
                                 class="flex flex-col gap-2 pl-2 border-l-2 border-black border-dashed my-1"
                             >
@@ -294,7 +304,7 @@
                                 </p>
                             </div>
 
-                            <!-- Linux Blinking Cursor -->
+                        
                             <div>
                                 <span class="text-black font-bold"
                                     >ibrahim@Portfolio:~$</span
@@ -310,7 +320,7 @@
 
             <section
                 id="projects"
-                class="project-showcase w-full border border-black mt-3 p-6"
+                class="hidden md:block project-showcase w-full border border-black mt-3 p-6"
             >
                 <div
                     class="main-heading flex justify-center items-center tracking-tighter sticky top-0 z-10 w-full p-4 bg-[#007e8d]"
