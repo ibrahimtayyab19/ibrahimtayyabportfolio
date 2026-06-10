@@ -94,7 +94,7 @@
                 <div
                     class="flex gap-1 items-end font-medium text-base md:text-lg"
                 >
-                    <p>[4:11:00 PM]</p>
+                    <p id="current-time">[--:--:--]</p>
                     <p>--------</p>
                     <p>Front-End Developer</p>
                 </div>
@@ -680,5 +680,24 @@
                 </div>
             </section>
         </main>
+        <script>
+            (function () {
+                const pad = (n) => (n < 10 ? "0" + n : n);
+                function updateTime() {
+                    const el = document.getElementById("current-time");
+                    if (!el) return;
+                    const d = new Date();
+                    let h = d.getHours();
+                    const ampm = h >= 12 ? "PM" : "AM";
+                    h = h % 12 || 12;
+                    el.textContent = `[${pad(h)}:${pad(d.getMinutes())}:${pad(d.getSeconds())} ${ampm}]`;
+                }
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    updateTime();
+                    setInterval(updateTime, 1000);
+                });
+            })();
+        </script>
     </body>
 </html>
